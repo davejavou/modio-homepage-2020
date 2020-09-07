@@ -11,7 +11,7 @@ $black: #171727;
 $light: #f5f5f5;
 $dark: #2c2c3f;
 $primary: #44bfd5;
-$alt: #93b471;
+$success: #93b471;
 $link: #93b471;
 
 // BULMA CSS
@@ -20,25 +20,26 @@ $link: #93b471;
 // HOMEPAGE CSS
 
 // BACKGROUNDS
-.mod-background-bluetiles {
+.modio-background-bluetiles {
   background-size: cover;
   background-position: top center;
   background-repeat: no-repeat;
+  background-color: $dark;
   background-image: linear-gradient(rgba($dark, 0.7), rgba($dark, 0.9)),
     url(../img/bg-tiles.jpg);
 }
-.mod-background-greentiles {
+.modio-background-greentiles {
   background-size: cover;
   background-position: top center;
   background-repeat: no-repeat;
-  background-image: linear-gradient(rgba($alt, 0.7), rgba($alt, 0.9)),
+  background-image: linear-gradient(rgba($success, 0.7), rgba($success, 0.9)),
     url(../img/bg-tiles.jpg);
 }
 
 // NAV BAR
-.mod-navbar {
+.modio-navbar {
   // Larger Logo with Hover Shadow
-  .mod-navbar-logo {
+  .modio-navbar-logo {
     margin-right: 10px;
     img {
       height: 45px;
@@ -66,21 +67,9 @@ $link: #93b471;
   }
 }
 
-// HERO ART
-.mod-hero-art {
-  position: relative;
-  height: 450px;
-  max-width: 500px;
-  overflow: hidden;
-
-  img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-
-    &.mod-hero-box {
-      top: 42%;
-    }
-  }
+// Launch Box
+.modio-launch-box {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
 }
+

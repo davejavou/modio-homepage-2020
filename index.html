@@ -67,21 +67,20 @@
       sizes="16x16"
       type="image/png"
     />
+    <link rel="stylesheet" href="css/fontawesome/css/all.min.css" />
     <link rel="stylesheet" href="css/main.css" />
   </head>
-  <body>
-    <section
-      class="hero is-dark is-medium is-halfheight mod-background-bluetiles"
-    >
+  <body class="modio-background-bluetiles">
+    <section class="hero is-medium is-transparent">
       <div class="hero-head">
         <div class="container">
           <nav
-            class="navbar is-dark is-transparent mod-navbar"
+            class="navbar is-dark is-transparent modio-navbar"
             role="navigation"
             aria-label="main navigation"
           >
             <div class="navbar-brand">
-              <a class="navbar-item mod-navbar-logo" href="https://mod.io">
+              <a class="navbar-item modio-navbar-logo" href="https://mod.io">
                 <img src="/img/logo-modio-color.svg" />
               </a>
 
@@ -129,72 +128,107 @@
           </nav>
         </div>
       </div>
-      <div class="hero-body">
+      <div class="hero-body pb-0 is-clipped">
         <div class="container">
           <div class="columns">
-            <div class="column">
-              <h1 class="title is-1 is-spaced">Turn on Mods</h1>
-              <h2 class="subtitle is-4">
-                Quickly add cross-platform mod support & thriving UGC communities to your games.
+            <div class="column pb-0">
+              <h1 class="title is-1 is-spaced has-text-white">Turn on Mods</h1>
+              <h2 class="subtitle is-4 has-text-white">
+                Quickly add cross-platform mod support & thriving UGC
+                communities to your games.
               </h2>
+              <div class="p-2">
+                <a class="button is-medium is-success mr-4">
+                  <span class="icon">
+                    <i class="fas fa-user"></i>
+                  </span>
+                  <span>Start Now</span></a
+                >
+                <a class="button is-medium is-success">
+                  <span class="icon">
+                    <i class="fas fa-comment-alt"></i>
+                  </span>
+                  <span>Contact Us</span></a
+                >
+              </div>
             </div>
-            <div class="column is-two-fifths">
-              <div class="mod-hero-art">
-                <img class="mod-hero-box" src="img/box.png" />
-                <img class="mod-hero-market" src="img/market.png" />
+            <div class="column pb-0">
+              <figure class="image is-square mr-4 ml-4">
+                <img src="img/hero-art.png" />
+              </figure>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="hero-footer">
+        <div class="container">
+          <!-- 3 Steps Box -->
+          <div class="box mb-0 modio-launch-box">
+            <h3 class="subtitle is-3 has-text-centered">
+              Launch your UGC community today
+            </h3>
+            <div class="columns">
+              <div class="column has-text-centered">
+                <figure class="image is-128x128 is-inline-block">
+                  <img src="img/launch-tools.svg" />
+                </figure>
+                <h5 class="subtitle is-5 has-text-weight-bold">
+                  Add Mod Support
+                </h5>
+                <p>
+                  You’ve created tools so your players can make contents & mods.
+                  <br />
+                  <span class="has-text-primary">Well done!</span>
+                </p>
+              </div>
+              <div class="column has-text-centered">
+                <figure class="image is-128x128 is-inline-block">
+                  <img src="img/launch-connect.svg" />
+                </figure>
+                <h5 class="subtitle is-5 has-text-weight-bold">
+                  Connect mod.io
+                </h5>
+                <p>
+                  Connect your tools and in-game UI with our SDKs and plugins.
+
+                  <br />
+                  <span class="has-text-primary">We handle the rest!</span>
+                </p>
+              </div>
+              <div class="column has-text-centered">
+                <figure class="image is-128x128 is-inline-block">
+                  <img src="img/launch-done.svg" />
+                </figure>
+                <h5 class="subtitle is-5 has-text-weight-bold">
+                  Launch Mod Market
+                </h5>
+                <p>
+                  Players share and install content, in-game or online.
+                  <br />
+                  <span class="has-text-primary">You control everything!</span>
+                </p>
               </div>
             </div>
           </div>
-        </div>
-      </div>
-    </section>
-    <section class="section">
-      <div class="container">
-        <div class="columns">
-          <div class="column">
-            <div class="content">
-              <h3>Get started</h3>
-              <p>
-                You're <strong>ready</strong> to create your own designs with
-                Bulma. Just edit or duplicate this page, or simply create a new
-                one!
-                <br />
-                For example, this page is <strong>only</strong> built with the
-                following <strong>Bulma elements</strong>:
-              </p>
-            </div>
-            <div class="content">
-              <p>
-                If you want to <strong>learn more</strong>, follow these links:
-              </p>
-            </div>
-            <div class="field is-grouped">
-              <p class="control">
-                <a class="button is-medium is-primary" href="http://bulma.io">
-                  <strong class="has-text-weight-semibold"
-                    >Bulma homepage</strong
-                  >
-                </a>
-              </p>
-              <p class="control">
-                <a
-                  class="button is-medium is-link"
-                  href="http://bulma.io/documentation/overview/start/"
-                >
-                  <strong class="has-text-weight-semibold"
-                    >Documentation</strong
-                  >
-                </a>
-              </p>
+          <!-- Logos Box -->
+          <div class="box has-background-light m-0 is-radiusless">
+            <h6 class="subtitle is-6 has-text-centered">
+              A Trusted UGC Platform
+            </h6>
+            <div class="is-flex">
+              <img src="img/logo-mordhau.png" alt="Mordhau" />
+              <img src="img/logo-snowrunner.png" alt="Snow Runner" />
+              <img src="img/logo-spaceengineers.png" alt="Space Engineers" />
+              <img src="img/logo-tabs.png" alt="TABS" />
             </div>
           </div>
         </div>
       </div>
     </section>
-    <footer class="footer has-text-centered">
+    <footer class="footer has-text-centered has-background-dark">
       <div class="container">
         <div class="columns">
-          <div class="column is-8-desktop is-offset-2-desktop">
+          <div class="column">
             <p>
               <strong class="has-text-weight-semibold">
                 <a href="https://www.mod.io/">mod.io</a>
