@@ -7,7 +7,7 @@
 @import "../node_modules/bulma/sass/utilities/initial-variables";
 $family-sans-serif: "Montserrat", "Helvetica", "Arial", sans-serif;
 $white: #fff;
-$black: #171727;
+$black-ter: #171727;
 $light: #f5f5f5;
 $dark: #2c2c3f;
 $primary: #44bfd5;
@@ -59,7 +59,7 @@ $link: #93b471;
       .navbar-link {
         color: $dark; // 1
         &:hover {
-          color: $black; // 1
+          color: $black-ter; // 1
           background-image: linear-gradient($light, $light); // 2
         }
       }
@@ -88,3 +88,35 @@ $link: #93b471;
   }
 }
 
+// Features Box
+.modio-features-box {
+  background-size: cover;
+  background-position: top center;
+  background-repeat: repeat-x;
+  background-color: $black;
+  background-image: radial-gradient(ellipse farthest-side, rgba($dark, 0.5) 50%, rgba($dark, 0) 100%),
+    url(../img/bg-gears.svg);
+}
+
+// Swap every other Feature: left <-> right
+.modio-swap-direction {
+  flex-direction: row-reverse;
+}
+
+// Gears Horizontal Rule
+hr.modio-hr-gears {
+  position: relative;
+  z-index: 2;
+  margin: -100px -3rem 0 -3rem;
+  height: 126px;
+  background-size: auto 126px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  background-image: url(../img/hr-gears-1.svg);
+}
+
+// Make Room for Gears HR
+.modio-hr-pad-bottom {
+  padding-bottom: 90px;
+}
