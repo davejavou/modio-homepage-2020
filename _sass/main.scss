@@ -17,23 +17,22 @@ $link: #93b471;
 // BULMA CSS
 @import "../node_modules/bulma/bulma";
 
-// HOMEPAGE CSS
+// CUSTOM CSS
 .has-text-shadow {
   text-shadow: 1px 1px 2px rgba($black, 0.3);
 }
-.has-box-shadow {
-  box-shadow: 0 0.5em 1em -0.125em rgba($black, 0.3),
-    0 0px 0 1px rgba($black, 0.02);
+.has-flat-bottom {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
 }
-
-// BACKGROUNDS
-.modio-background-bluetiles {
-  background-size: cover;
-  background-position: top center;
-  background-repeat: no-repeat;
-  background-color: $dark;
-  background-image: linear-gradient(rgba($dark, 0.7), rgba($dark, 1)),
-    url(../img/bg-tiles.jpg);
+.has-flex-reverse {
+  flex-direction: row-reverse;
+}
+.is-flex-direction-column {
+  flex-direction: column !important;
+}
+.has-top-auto {
+  margin-top: auto;
 }
 
 // NAV BAR
@@ -67,14 +66,25 @@ $link: #93b471;
   }
 }
 
-// Launch Box
-.modio-launch-box {
-  border-bottom-left-radius: 0;
-  border-bottom-right-radius: 0;
+.modio-hero {
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-color: $dark;
+  background-image: linear-gradient(rgba($dark, 0.7), rgba($dark, 1)),
+    url(../img/bg-tiles.jpg);
 }
 
-// Games Box
-.modio-games-box {
+.modio-hero-art {
+  margin: -20px 0;
+  @include touch {
+    margin: -20px auto;
+    max-width: 500px;
+    max-height: 500px;
+  }
+}
+
+.modio-games {
   flex-wrap: wrap;
   justify-content: space-around;
   a {
@@ -88,13 +98,23 @@ $link: #93b471;
   }
 }
 
-// Features Box
-.modio-features-box {
-  background-size: auto 120px, cover, 100%;
-  background-position: center calc(100% + 80px), top center, center center;
-  background-repeat: no-repeat;
+.modio-gear-line {
+  position: relative;
+  margin: -50px 0 -70px 0;
+  height: 120px;
+  background-size: auto 120px;
+  background-position: top center;
+  background-repeat: repeat-x;
+  background-color: transparent;
+  background-image: url(../img/hr-gears-tritone.svg);
+}
+
+.modio-features {
+  background-size: auto 120px, auto 80%, 100%;
+  background-position: center calc(100% + 80px), center center, center center;
+  background-repeat: repeat-x, no-repeat, no-repeat;
   background-color: $black;
-  background-image: url(../img/hr-gears-2.svg), url(../img/bg-gears.svg),
+  background-image: url(../img/hr-gears-solid.svg), url(../img/bg-gears.svg),
     radial-gradient(
       ellipse farthest-side,
       rgba($dark, 0.5) 50%,
@@ -102,34 +122,26 @@ $link: #93b471;
     );
 }
 
-// Swap every other Feature: left <-> right
-.modio-swap-direction {
-  flex-direction: row-reverse;
-}
-
-.modio-plans-box {
+.modio-plans {
+  position: relative;
+  box-shadow: 0 0 1em rgba($black-ter, 8.8), inset 0 0 1px rgba($white, 0.3);
   background-size: cover;
-  background-position: top center;
+  background-position: center top;
   background-repeat: no-repeat;
   background-color: $black-ter;
-  background-image: linear-gradient(rgba($black-ter, 0.4), rgba($black-ter, 0.7)),
+  background-image: linear-gradient(
+      rgba($black-ter, 0.5),
+      rgba($black-ter, 0.8)
+    ),
     url(../img/bg-stripes.jpg);
 }
 
-// Gears Horizontal Rule
-.modio-hr-gears {
-  position: relative;
-  z-index: 2;
-  margin: -100px -3rem 0 -3rem;
-  height: 120px;
-  background-size: auto 120px;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-color: transparent;
-  background-image: url(../img/hr-gears-1.svg);
-}
-
-// Make Room for Gears HR
-.modio-hr-pad-bottom {
-  padding-bottom: 90px;
+.modio-dev {
+  background-size: auto 120px, cover, cover;
+  background-position: center -50px, center top, center top;
+  background-repeat: repeat-x;
+  background-color: $primary;
+  background-image: url(../img/hr-gears-solid.svg),
+    linear-gradient(rgba($success, 0.7), rgba($success, 1)),
+    url(../img/bg-tiles.jpg);
 }
