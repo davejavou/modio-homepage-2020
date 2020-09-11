@@ -142,6 +142,6 @@ $link: #93b471;
   background-repeat: repeat-x;
   background-color: $primary;
   background-image: url(../img/hr-gears-solid.svg),
-    linear-gradient(rgba($success, 0.7), rgba($success, 1)),
+    linear-gradient(rgba($primary, 0.7), rgba($primary, 1)),
     url(../img/bg-tiles.jpg);
 }
