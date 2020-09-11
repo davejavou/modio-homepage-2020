@@ -33,7 +33,7 @@
     "js-build": "babel _javascript --out-dir js",
     "js-watch": "npm run js-build -- --watch",
     "serve": "browser-sync start --server --files \"css/*.css\", \"js/*.js\"",
-    "dist": "cp -R img dist/img; cp -R js dist/js; cp -R css dist/css; cp index.html dist/homepage.html",
+    "dist": "rm -r dist; mkdir dist; cp -R img dist/img; cp -R js dist/js; cp -R css dist/css; cp index.html dist/homepage.html; cp README.md dist/README.md",
     "start": "npm-run-all --parallel serve dist css-watch js-watch"
   }
 }

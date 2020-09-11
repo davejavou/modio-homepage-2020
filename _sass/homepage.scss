@@ -71,7 +71,7 @@ hr.modio-gear-line {
   background-position: top center;
   background-repeat: repeat-x;
   background-color: transparent;
-  background-image: url(../img/hr-gears-tritone.svg);
+  background-image: url(../img/hr-gears-black.svg);
 }
 
 section.modio-hero {
@@ -88,7 +88,7 @@ section.modio-features {
   background-position: center calc(100% + 80px), center center, center center;
   background-repeat: repeat-x, no-repeat, no-repeat;
   background-color: $black;
-  background-image: url(../img/hr-gears-solid.svg), url(../img/bg-gears.svg),
+  background-image: url(../img/hr-gears-dark.svg), url(../img/bg-gears.svg),
     radial-gradient(
       ellipse farthest-side,
       rgba($dark, 0.5) 50%,
@@ -115,7 +115,7 @@ section.modio-dev {
   background-position: center -50px, center top, center top;
   background-repeat: repeat-x;
   background-color: $primary;
-  background-image: url(../img/hr-gears-solid.svg),
+  background-image: url(../img/hr-gears-dark.svg),
     linear-gradient(rgba($primary, 0.7), rgba($primary, 1)),
     url(../img/bg-tiles.jpg);
 }
