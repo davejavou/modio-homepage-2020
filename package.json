@@ -30,9 +30,10 @@
     "css-postcss": "postcss --use autoprefixer --output css/homepage.css css/homepage.css",
     "css-watch": "npm run css-build -- --watch",
     "deploy": "npm run css-deploy && npm run js-build",
-    "js-build": "babel _javascript --out-dir lib",
+    "js-build": "babel _javascript --out-dir js",
     "js-watch": "npm run js-build -- --watch",
-    "serve": "browser-sync start --server --files \"css/*.css\", \"_javascript/*.js\"",
-    "start": "npm-run-all --parallel serve css-watch js-watch"
+    "serve": "browser-sync start --server --files \"css/*.css\", \"js/*.js\"",
+    "dist": "cp -R img dist/img; cp -R js dist/js; cp -R css dist/css; cp index.html dist/homepage.html",
+    "start": "npm-run-all --parallel serve dist css-watch js-watch"
   }
 }
